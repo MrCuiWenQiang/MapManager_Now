@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <#include "/header.html">
+</head>
+<body>
+<div id="rrappt" v-cloak>
+    <input type="text" id="id" value="${id}" hidden="false">
+    <div class="panel panel-default">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <div class="col-sm-2 control-label">审核状态</div>
+                <div class="col-sm-3">
+                    <select id="statusselect"  class="form-control" >
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-2 control-label">有效期</div>
+                <div class="col-sm-3">
+                    <select id="exptimer"  class="form-control" >
+
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="${request.contextPath}/statics/js/modules/sys/dg_code_apply.js?_${.now?long}"></script>
+</body>
+</html>
